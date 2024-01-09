@@ -5,3 +5,19 @@
   Created by Luis Gustavo on 09/01/24.
   
 */
+
+"BUY" = "Comprar";
+"CART" = "Carrinho";
+"CHECKOUT" = "Checkout";
+"CHECKOUT_MESSAGE" = "Não foi desenvolvido pois não estava no escopo do desafio =)";
+"COMICS" = "Quadrinhos";
+"DIGITAL_PRICE" = "Preço Digital";
+"EMAIL" = "Email";
+"FAVORITES" = "Favoritos";
+"ISSUE" = "Edição";
+"LOGIN" = "Login";
+"OK" = "Ok";
+"PASSWORD" = "Senha";
+"PRICE" = "Preço";
+"REMOVE_FILTER" = "Remover Filtro";
+"SEARCH" = "Pesquisar";
