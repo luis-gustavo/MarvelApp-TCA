@@ -5,31 +5,71 @@
 //  Created by Luis Gustavo on 09/01/24.
 //
 
+import ComposableArchitecture
 import XCTest
+@testable import MarvelAppTCA
 
+@MainActor
 final class ComicsFeatureTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+  func testOnInitialFetch() async {
+    let store = TestStore(initialState: ComicsFeature.State()) {
+      ComicsFeature()
+    } withDependencies: {
+      $0.comicsClient.fetchComics = { queryParameters in
+        ComicData(
+          offset: 0,
+          limit: 20,
+          total: 100,
+          count: 0,
+          results: MockComics.data
+        )
+      }
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    await store.send(.onAppear) {
+      $0.isLoading = true
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    await store.receive(\.comics, timeout: .seconds(1)) {
+      $0.isLoading = false
+      $0.comics = MockComics.data
+      $0.queryParameters.offset = 20
+    }
+  }
+
+  func testInfiniteScrollingFlow() async {
+    let store = TestStore(initialState: ComicsFeature.State()) {
+      ComicsFeature()
+    } withDependencies: {
+      $0.comicsClient.fetchComics = { queryParameters in
+        ComicData(
+          offset: 0,
+          limit: 20,
+          total: 100,
+          count: 0,
+          results: MockComics.data
+        )
+      }
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    await store.send(.onAppear) {
+      $0.isLoading = true
     }
 
+    await store.receive(\.comics, timeout: .seconds(1)) {
+      $0.isLoading = false
+      $0.comics = MockComics.data
+      $0.queryParameters.offset = 20
+    }
+
+    await store.send(.onAppear) {
+      $0.isLoading = true
+    }
+
+    await store.receive(\.comics, timeout: .seconds(1)) {
+      $0.isLoading = false
+      $0.comics = MockComics.data + MockComics.data
+      $0.queryParameters.offset = 40
+    }
+  }
 }
