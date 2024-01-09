@@ -11,19 +11,20 @@ struct ComicRow: View {
   let comic: Comic
 
   var body: some View {
-    HStack {
+    VStack {
+      Spacer()
       CachedAsyncImage(url: comic.thumbnail.url) { image in
         image
           .resizable()
-          .frame(width: 80)
+          .frame(height: 200)
           .clipShape(RoundedRectangle(cornerRadius: 20))
       } placeholder: {
         ProgressView()
-          .frame(width: 80)
       }
       Spacer()
       Text(comic.title)
         .font(.title3)
+        .multilineTextAlignment(.center)
       Spacer()
     }
   }
@@ -32,7 +33,7 @@ struct ComicRow: View {
 struct ComicRowPreviews: PreviewProvider {
   static var previews: some View {
     ComicRow(comic: .mock)
-      .previewLayout(.fixed(width: 300, height: 100))
+      .previewLayout(.fixed(width: 200, height: 250))
   }
 }
 

@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct ComicResponse: Codable, Hashable {
+  let data: ComicData
+}
+
+struct ComicData: Codable, Hashable {
+  let offset: Int
+  let limit: Int
+  let total: Int
+  let count: Int
+  let results: [Comic]
+}

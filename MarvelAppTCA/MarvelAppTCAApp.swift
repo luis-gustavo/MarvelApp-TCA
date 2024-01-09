@@ -5,13 +5,21 @@
 //  Created by Luis Gustavo on 09/01/24.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 @main
 struct MarvelAppTCAApp: App {
+  static let store = Store(initialState: ComicsFeature.State(), reducer: {
+    ComicsFeature()
+      ._printChanges()
+  })
+
   var body: some Scene {
     WindowGroup {
-      ComicsView(comics: Comic.mockData)
+      ComicsView(
+        store: MarvelAppTCAApp.store
+      )
     }
   }
 }
