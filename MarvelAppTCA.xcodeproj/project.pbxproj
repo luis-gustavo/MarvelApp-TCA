@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6E4F86702B4D74F7002C8E26 /* MarvelAppTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F866F2B4D74F7002C8E26 /* MarvelAppTCAApp.swift */; };
-		6E4F86722B4D74F7002C8E26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F86712B4D74F7002C8E26 /* ContentView.swift */; };
 		6E4F86742B4D74F8002C8E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4F86732B4D74F8002C8E26 /* Assets.xcassets */; };
 		6E4F86772B4D74F8002C8E26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4F86762B4D74F8002C8E26 /* Preview Assets.xcassets */; };
 		6E4F86812B4D74F8002C8E26 /* MarvelAppTCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F86802B4D74F8002C8E26 /* MarvelAppTCATests.swift */; };
@@ -17,6 +16,14 @@
 		6E4F869B2B4D76CD002C8E26 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4F869A2B4D76CD002C8E26 /* ComposableArchitecture */; };
 		6E4F869E2B4D77F7002C8E26 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4F869D2B4D77F7002C8E26 /* Networking */; };
 		6E4F86A02B4D7820002C8E26 /* Networking in Resources */ = {isa = PBXBuildFile; fileRef = 6E4F869F2B4D7820002C8E26 /* Networking */; };
+		6E4F86A52B4D7EDD002C8E26 /* ComicsFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F86A42B4D7EDD002C8E26 /* ComicsFeature.swift */; };
+		6E4F86A82B4D7FD5002C8E26 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F86A72B4D7FD5002C8E26 /* Comic.swift */; };
+		6E4F86AA2B4D7FF3002C8E26 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F86A92B4D7FF3002C8E26 /* Price.swift */; };
+		6E4F86AC2B4D8004002C8E26 /* ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F86AB2B4D8004002C8E26 /* ImageURL.swift */; };
+		6E4F86AF2B4D806B002C8E26 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F86AE2B4D806B002C8E26 /* Localizable.swift */; };
+		6E4F86B42B4D80BD002C8E26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E4F86B62B4D80BD002C8E26 /* Localizable.strings */; };
+		6E4F86BA2B4D82A5002C8E26 /* ComicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F86B92B4D82A5002C8E26 /* ComicsView.swift */; };
+		6E4F86BC2B4D86B5002C8E26 /* ComicRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F86BB2B4D86B5002C8E26 /* ComicRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,6 @@
 /* Begin PBXFileReference section */
 		6E4F866C2B4D74F7002C8E26 /* MarvelAppTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelAppTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4F866F2B4D74F7002C8E26 /* MarvelAppTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAppTCAApp.swift; sourceTree = "<group>"; };
-		6E4F86712B4D74F7002C8E26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E4F86732B4D74F8002C8E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E4F86762B4D74F8002C8E26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E4F867C2B4D74F8002C8E26 /* MarvelAppTCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAppTCATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +54,16 @@
 		6E4F868A2B4D74F8002C8E26 /* MarvelAppTCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAppTCAUITests.swift; sourceTree = "<group>"; };
 		6E4F868C2B4D74F8002C8E26 /* MarvelAppTCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAppTCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6E4F869F2B4D7820002C8E26 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
+		6E4F86A42B4D7EDD002C8E26 /* ComicsFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsFeature.swift; sourceTree = "<group>"; };
+		6E4F86A72B4D7FD5002C8E26 /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		6E4F86A92B4D7FF3002C8E26 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		6E4F86AB2B4D8004002C8E26 /* ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURL.swift; sourceTree = "<group>"; };
+		6E4F86AE2B4D806B002C8E26 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		6E4F86B52B4D80BD002C8E26 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6E4F86B72B4D80C1002C8E26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6E4F86B92B4D82A5002C8E26 /* ComicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsView.swift; sourceTree = "<group>"; };
+		6E4F86BB2B4D86B5002C8E26 /* ComicRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicRow.swift; sourceTree = "<group>"; };
+		6E4F86BD2B4D8CA1002C8E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +117,12 @@
 		6E4F866E2B4D74F7002C8E26 /* MarvelAppTCA */ = {
 			isa = PBXGroup;
 			children = (
+				6E4F86BD2B4D8CA1002C8E26 /* Info.plist */,
+				6E4F86A32B4D7E8E002C8E26 /* Features */,
+				6E4F86AD2B4D8036002C8E26 /* Localizable */,
+				6E4F86A62B4D7FCA002C8E26 /* Models */,
+				6E4F86B82B4D8290002C8E26 /* Views */,
 				6E4F866F2B4D74F7002C8E26 /* MarvelAppTCAApp.swift */,
-				6E4F86712B4D74F7002C8E26 /* ContentView.swift */,
 				6E4F86732B4D74F8002C8E26 /* Assets.xcassets */,
 				6E4F86752B4D74F8002C8E26 /* Preview Content */,
 			);
@@ -132,6 +152,42 @@
 				6E4F868C2B4D74F8002C8E26 /* MarvelAppTCAUITestsLaunchTests.swift */,
 			);
 			path = MarvelAppTCAUITests;
+			sourceTree = "<group>";
+		};
+		6E4F86A32B4D7E8E002C8E26 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6E4F86A42B4D7EDD002C8E26 /* ComicsFeature.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6E4F86A62B4D7FCA002C8E26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E4F86A72B4D7FD5002C8E26 /* Comic.swift */,
+				6E4F86A92B4D7FF3002C8E26 /* Price.swift */,
+				6E4F86AB2B4D8004002C8E26 /* ImageURL.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E4F86AD2B4D8036002C8E26 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				6E4F86AE2B4D806B002C8E26 /* Localizable.swift */,
+				6E4F86B62B4D80BD002C8E26 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		6E4F86B82B4D8290002C8E26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E4F86B92B4D82A5002C8E26 /* ComicsView.swift */,
+				6E4F86BB2B4D86B5002C8E26 /* ComicRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +280,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 6E4F86632B4D74F7002C8E26;
 			packageReferences = (
@@ -246,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E4F86A02B4D7820002C8E26 /* Networking in Resources */,
+				6E4F86B42B4D80BD002C8E26 /* Localizable.strings in Resources */,
 				6E4F86772B4D74F8002C8E26 /* Preview Assets.xcassets in Resources */,
 				6E4F86742B4D74F8002C8E26 /* Assets.xcassets in Resources */,
 			);
@@ -272,8 +330,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4F86722B4D74F7002C8E26 /* ContentView.swift in Sources */,
+				6E4F86AF2B4D806B002C8E26 /* Localizable.swift in Sources */,
+				6E4F86BA2B4D82A5002C8E26 /* ComicsView.swift in Sources */,
+				6E4F86AC2B4D8004002C8E26 /* ImageURL.swift in Sources */,
+				6E4F86BC2B4D86B5002C8E26 /* ComicRow.swift in Sources */,
+				6E4F86A82B4D7FD5002C8E26 /* Comic.swift in Sources */,
 				6E4F86702B4D74F7002C8E26 /* MarvelAppTCAApp.swift in Sources */,
+				6E4F86AA2B4D7FF3002C8E26 /* Price.swift in Sources */,
+				6E4F86A52B4D7EDD002C8E26 /* ComicsFeature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +372,18 @@
 			targetProxy = 6E4F86872B4D74F8002C8E26 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E4F86B62B4D80BD002C8E26 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E4F86B52B4D80BD002C8E26 /* pt-BR */,
+				6E4F86B72B4D80C1002C8E26 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6E4F868E2B4D74F8002C8E26 /* Debug */ = {
@@ -440,6 +516,7 @@
 				DEVELOPMENT_TEAM = A93689JNSR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarvelAppTCA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -469,6 +546,7 @@
 				DEVELOPMENT_TEAM = A93689JNSR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarvelAppTCA/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

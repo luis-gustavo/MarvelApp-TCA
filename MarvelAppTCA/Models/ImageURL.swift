@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Image: Codable, Hashable {
+struct ImageURL: Codable, Hashable {
 
   // MARK: - Properties
   var url: URL? { URL(string: "\(path).\(`extension`)") }

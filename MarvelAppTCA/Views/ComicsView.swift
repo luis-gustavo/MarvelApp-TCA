@@ -1,5 +1,5 @@
 //
-//  MarvelAppTCAApp.swift
+//  ComicsView.swift
 //  MarvelAppTCA
 //
 //  Created by Luis Gustavo on 09/01/24.
@@ -7,13 +7,21 @@
 
 import SwiftUI
 
-@main
-struct MarvelAppTCAApp: App {
-  var body: some Scene {
-    WindowGroup {
-      ComicsView(comics: Comic.mockData)
+struct ComicsView: View {
+  let comics: [Comic]
+
+  var body: some View {
+    List {
+      ForEach(comics) { comic in
+        ComicRow(comic: comic)
+          .frame(height: 80)
+      }
     }
   }
+}
+
+#Preview {
+  ComicsView(comics: Comic.mockData)
 }
 
 private extension Comic {
