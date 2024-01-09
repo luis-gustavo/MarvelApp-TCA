@@ -1,5 +1,5 @@
 //
-//  ComicClient.swift
+//  ComicsClient.swift
 //  MarvelAppTCA
 //
 //  Created by Luis Gustavo on 09/01/24.
@@ -9,11 +9,11 @@ import ComposableArchitecture
 import Foundation
 import Networking
 
-struct ComicClient {
+struct ComicsClient {
   var fetchComics: (ComicQueryParameters) async throws -> ComicData
 }
 
-extension ComicClient: DependencyKey {
+extension ComicsClient: DependencyKey {
   static let liveValue = Self(
     fetchComics: { queryParameters in
       let response = try await URLSessionNetworking.shared.request(endPoint: ComicEndpoint.comics(queryParameters: queryParameters))
@@ -24,8 +24,8 @@ extension ComicClient: DependencyKey {
 }
 
 extension DependencyValues {
-  var comicClient: ComicClient {
-    get { self[ComicClient.self] }
-    set { self[ComicClient.self] = newValue }
+  var comicsClient: ComicsClient {
+    get { self[ComicsClient.self] }
+    set { self[ComicsClient.self] = newValue }
   }
 }

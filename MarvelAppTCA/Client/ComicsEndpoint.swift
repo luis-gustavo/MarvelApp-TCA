@@ -41,8 +41,8 @@ private struct Constants {
   }
 }
 
-struct ComicQueryParameters {
-  let offset: Int
+struct ComicQueryParameters: Hashable {
+  var offset: Int
   let limit: Int
   let text: String?
   let year: Int?
