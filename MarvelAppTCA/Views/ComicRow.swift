@@ -12,13 +12,14 @@ struct ComicRow: View {
 
   var body: some View {
     HStack {
-      AsyncImage(url: comic.thumbnail.url) { image in
+      CachedAsyncImage(url: comic.thumbnail.url) { image in
         image
           .resizable()
           .frame(width: 80)
           .clipShape(RoundedRectangle(cornerRadius: 20))
       } placeholder: {
         ProgressView()
+          .frame(width: 80)
       }
       Spacer()
       Text(comic.title)
@@ -46,3 +47,4 @@ private extension Comic {
       ]
   )
 }
+
