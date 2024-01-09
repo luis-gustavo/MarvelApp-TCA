@@ -15,6 +15,8 @@
 		6E4F868B2B4D74F8002C8E26 /* MarvelAppTCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F868A2B4D74F8002C8E26 /* MarvelAppTCAUITests.swift */; };
 		6E4F868D2B4D74F8002C8E26 /* MarvelAppTCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F868C2B4D74F8002C8E26 /* MarvelAppTCAUITestsLaunchTests.swift */; };
 		6E4F869B2B4D76CD002C8E26 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4F869A2B4D76CD002C8E26 /* ComposableArchitecture */; };
+		6E4F869E2B4D77F7002C8E26 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 6E4F869D2B4D77F7002C8E26 /* Networking */; };
+		6E4F86A02B4D7820002C8E26 /* Networking in Resources */ = {isa = PBXBuildFile; fileRef = 6E4F869F2B4D7820002C8E26 /* Networking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		6E4F86862B4D74F8002C8E26 /* MarvelAppTCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAppTCAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E4F868A2B4D74F8002C8E26 /* MarvelAppTCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAppTCAUITests.swift; sourceTree = "<group>"; };
 		6E4F868C2B4D74F8002C8E26 /* MarvelAppTCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAppTCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6E4F869F2B4D7820002C8E26 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4F869E2B4D77F7002C8E26 /* Networking in Frameworks */,
 				6E4F869B2B4D76CD002C8E26 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +80,7 @@
 		6E4F86632B4D74F7002C8E26 = {
 			isa = PBXGroup;
 			children = (
+				6E4F869F2B4D7820002C8E26 /* Networking */,
 				6E4F866E2B4D74F7002C8E26 /* MarvelAppTCA */,
 				6E4F867F2B4D74F8002C8E26 /* MarvelAppTCATests */,
 				6E4F86892B4D74F8002C8E26 /* MarvelAppTCAUITests */,
@@ -147,6 +152,7 @@
 			name = MarvelAppTCA;
 			packageProductDependencies = (
 				6E4F869A2B4D76CD002C8E26 /* ComposableArchitecture */,
+				6E4F869D2B4D77F7002C8E26 /* Networking */,
 			);
 			productName = MarvelAppTCA;
 			productReference = 6E4F866C2B4D74F7002C8E26 /* MarvelAppTCA.app */;
@@ -239,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E4F86A02B4D7820002C8E26 /* Networking in Resources */,
 				6E4F86772B4D74F8002C8E26 /* Preview Assets.xcassets in Resources */,
 				6E4F86742B4D74F8002C8E26 /* Assets.xcassets in Resources */,
 			);
@@ -613,6 +620,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6E4F86992B4D76CD002C8E26 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		6E4F869D2B4D77F7002C8E26 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
